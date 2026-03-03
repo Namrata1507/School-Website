@@ -49,6 +49,10 @@ footer
    backgroumd-size:cover;
    color:white;
    background:url('logo.jpeg');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;   
+   
 }
    /* ========================= */
 /* ABOUT PAGE STYLING START */
@@ -87,6 +91,7 @@ footer
 /* ========================= */
 /* ABOUT PAGE STYLING END */
 /* ========================= */
+
 
 
 
