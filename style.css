@@ -8,4 +8,17 @@ nav a
    margin-right: 190px;
    color:black;
    font-weight: bold;
+
+}
+body
+{
+   margin:0;
+   font-family:'Segoe UI',sans-serif;
+   background:linear-gradient;
+}
+header
+{
+   background:liner-gradient;
+   text-align:center;
+   padding:25px;
 }
