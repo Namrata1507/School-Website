@@ -1,11 +1,11 @@
 nav
 {
    background-color:bisque;
-   padding:10px;
+   padding:10;
 }
 nav a
 {
-   margin-right: 190px;
+   margin-right: 190;
    color:black;
    font-weight: bold;
 
@@ -20,5 +20,6 @@ header
 {
    background:liner-gradient;
    text-align:center;
-   padding:25px;
+   padding:25;
 }
+
