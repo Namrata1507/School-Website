@@ -49,7 +49,44 @@ footer
    backgroumd-size:cover;
    color:white;
 }
-   
+   /* ========================= */
+/* ABOUT PAGE STYLING START */
+/* ========================= */
+
+.about-section {
+    padding: 40px;
+    background-color: white;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #002147;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+}
+
+.image-section img {
+    width: 280px;
+    border-radius: 8px;
+}
+
+.text-section {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+}
+
+/* ========================= */
+/* ABOUT PAGE STYLING END */
+/* ========================= */
+
 
 
 
