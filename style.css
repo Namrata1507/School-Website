@@ -1,120 +1,99 @@
-nav
-{
-   background-color:bisque;
-   padding:10;
-}
-nav a
-{
-   margin-right: 190;
-   color:black;
-   font-weight: bold;
-
-}
-body
-{
-   margin:0;
-   font-family:'Segoe UI',sans-serif;
-   background:linear-gradient;
-}
-header
-{
-   background:liner-gradient;
-   text-align:center;
-   padding:25;
-}
-.card {
-    background: white;
-    width: 80%;
-    margin: 40px auto;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    transition: 0.3s;
-}
-.card:hover {
-    transform: scale(1.02);
-}
-footer
-{
-   text-align:center;
-   background-color:darkblue;
-   color:white;
-   padding:15px;
-   margin-top:40px;
-}
-.web
-{
-   text-align:center;
-   padding:60px;
-   backgroumd-size:cover;
-   color:white;
-
-    
-   
-}
-   /* ========================= */
-/* ABOUT PAGE STYLING START */
+/* ========================= */
+/* RESET & GENERAL */
 /* ========================= */
 
-.about-section {
-    padding: 40px;
-    background-color: white;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.section-title {
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
+    line-height: 1.6;
+}
+
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+header {
+    background: linear-gradient(to right, #002147, #004080);
     text-align: center;
-    margin-bottom: 30px;
+    padding: 25px 15px;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+/* ========================= */
+/* NAVIGATION */
+/* ========================= */
+
+nav {
+    background-color: bisque;
+    padding: 12px 0;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 25px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #0d6efd;
+}
+
+/* ========================= */
+/* WELCOME SECTION */
+/* ========================= */
+
+.web {
+    text-align: center;
+    padding: 40px 20px;
     color: #002147;
 }
 
-.about-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    align-items: center;
+/* ========================= */
+/* CARD DESIGN */
+/* ========================= */
+
+.card {
+    background: white;
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    transition: 0.3s;
 }
 
-.image-section img {
-    width: 280px;
-    border-radius: 8px;
-}
-
-.text-section {
-    flex: 1;
-    font-size: 16px;
-    line-height: 1.7;
-    color: #333;
+.card:hover {
+    transform: translateY(-5px);
 }
 
 /* ========================= */
-/* ABOUT PAGE STYLING END */
+/* HERO SLIDER */
 /* ========================= */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-    border: 2px solid black;  
-}
 
-th, td {
-    border: 1px solid #555;    
-    padding: 10px;
-    text-align: left;
-}
-
-th {
-    background-color: #f2f2f2;
-}
 .hero-slider {
     text-align: center;
-    padding: 60px 20px;
+    padding: 40px 20px;
     background: linear-gradient(to right, #e3f2fd, #ffffff);
 }
 
 .slider-container {
     position: relative;
     max-width: 400px;
-    margin: auto;
+    margin: 30px auto;
     overflow: hidden;
 }
 
@@ -133,8 +112,12 @@ th {
 
 .slide img {
     width: 100%;
+    height: 350px;
+    object-fit: cover;
     border-radius: 15px 15px 0 0;
 }
+
+/* Slider Buttons */
 
 .prev, .next {
     position: absolute;
@@ -143,10 +126,11 @@ th {
     background: #0d6efd;
     color: white;
     border: none;
-    font-size: 25px;
-    padding: 8px 15px;
+    font-size: 22px;
+    padding: 10px 15px;
     cursor: pointer;
     border-radius: 50%;
+    transition: 0.3s;
 }
 
 .prev { left: 10px; }
@@ -156,12 +140,90 @@ th {
     background: #084298;
 }
 
+/* ========================= */
+/* ABOUT PAGE */
+/* ========================= */
 
+.about-section {
+    padding: 50px 20px;
+    background-color: white;
+}
 
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #002147;
+}
 
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
 
+.image-section img {
+    width: 280px;
+    border-radius: 10px;
+}
 
+.text-section {
+    flex: 1;
+    min-width: 250px;
+    font-size: 16px;
+    color: #333;
+}
 
+/* ========================= */
+/* TABLE */
+/* ========================= */
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 2px solid black;  
+}
 
+th, td {
+    border: 1px solid #555;    
+    padding: 12px;
+    text-align: left;
+}
 
+th {
+    background-color: #f2f2f2;
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+footer {
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* ========================= */
+/* RESPONSIVE DESIGN */
+/* ========================= */
+
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .slide img {
+        height: 250px;
+    }
+}
