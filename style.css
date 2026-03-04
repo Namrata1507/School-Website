@@ -105,6 +105,43 @@ th, td {
 th {
     background-color: #f2f2f2;
 }
+.slider-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.slider {
+    overflow: hidden;
+    max-width: 400px;
+    margin: auto;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    background: white;
+    border-radius: 10px;
+    padding-bottom: 15px;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.slide h3 {
+    margin: 10px 0 5px;
+    color: #2c3e50;
+}
+
+.slide p {
+    color: #555;
+}
 
 
 
