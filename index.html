@@ -6,6 +6,45 @@
     <title>School Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
+    <script>
+let index = 0;
+const slides = document.querySelector(".slides");
+const totalSlides = document.querySelectorAll(".slide").length;
+
+let startX = 0;
+
+document.querySelector(".slider").addEventListener("touchstart", function(e){
+    startX = e.touches[0].clientX;
+});
+
+document.querySelector(".slider").addEventListener("touchend", function(e){
+    let endX = e.changedTouches[0].clientX;
+
+    if(startX > endX + 50){
+        nextSlide();
+    } else if(startX < endX - 50){
+        prevSlide();
+    }
+});
+
+function nextSlide(){
+    if(index < totalSlides - 1){
+        index++;
+        updateSlide();
+    }
+}
+
+function prevSlide(){
+    if(index > 0){
+        index--;
+        updateSlide();
+    }
+}
+
+function updateSlide(){
+    slides.style.transform = `translateX(-${index * 100}%)`;
+}
+</script>
 <body>
     <header>
         <h1>Shri.Chhatrapati Shivaji Vidyaniketan,Peth</h1>
@@ -51,5 +90,6 @@
 </body>
 
 </html>
+
 
 
