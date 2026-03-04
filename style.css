@@ -91,6 +91,22 @@ footer
 /* ========================= */
 /* ABOUT PAGE STYLING END */
 /* ========================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    border: 2px solid black;  
+}
+
+th, td {
+    border: 1px solid #555;    
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
 
 
 
