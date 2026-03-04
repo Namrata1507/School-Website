@@ -48,10 +48,8 @@ footer
    padding:60px;
    backgroumd-size:cover;
    color:white;
-   background:url('logo.jpeg');
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: contain;   
+
+    
    
 }
    /* ========================= */
@@ -107,6 +105,7 @@ th, td {
 th {
     background-color: #f2f2f2;
 }
+
 
 
 
