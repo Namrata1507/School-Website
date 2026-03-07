@@ -123,6 +123,7 @@ nav a:hover {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    z-index:10px;
     background: #0d6efd;
     color: white;
     border: none;
@@ -227,3 +228,4 @@ footer {
         height: 250px;
     }
 }
+
