@@ -6,7 +6,54 @@
     <title>School Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
-    <script>
+
+<body>
+    <header>
+        <h1>Shri.Chhatrapati Shivaji Vidyaniketan,Peth</h1>
+        <p>Address-Peth-Shirala Road(near Market Yard), Peth, Tal-Walwa, Dist. Sangli</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="contact.html">Contact</a>
+        <a href="admission.html">Admission</a>
+        <a href="routine.html">Routine</a>
+    </nav>
+
+    <div class="web">
+        <h2>Welcome</h2>
+        <p>We provide quality education and overall personality development.</p>
+    </div>
+<section class="hero-slider">
+    <h2>Our Inspiration</h2>
+
+    <div class="slider-container">
+
+        <button class="prev"
+            onclick="prevSlide()">&#10094;</button>
+
+        <div class="slides">
+            <div class="slide">
+                <img src="Inspirational_figure.jpeg">
+                <h3>Late Shri.Sambhajirao Bhagwanrao Patil.</h3>
+                <p>Inspirational Figure</p>
+            </div>
+
+            <div class="slide">
+                <img src="chairman.jpeg">
+                <h3>Shri.Jayant Sambhajirao Patil.</h3>
+                <p>Founder</p>
+            </div>
+        </div>
+
+       <button class="next">&#10095;   </button>
+
+    </div>
+</section>
+    <footer>© 2026 School Website</footer>
+
+        <script>
 let index = 0;
 const slides = document.querySelector(".slides");
 const totalSlides = document.querySelectorAll(".slide").length;
@@ -14,7 +61,7 @@ const totalSlides = document.querySelectorAll(".slide").length;
 let startX = 0;
 
 document.querySelector(".slider").addEventListener("touchstart", function(e){
-    startX = e.touches[0].clientX;
+    startX = e.touches[0].clientX;d
 });
 
 document.querySelector(".slider").addEventListener("touchend", function(e){
@@ -45,53 +92,10 @@ function updateSlide(){
     slides.style.transform = `translateX(-${index * 100}%)`;
 }
 </script>
-<body>
-    <header>
-        <h1>Shri.Chhatrapati Shivaji Vidyaniketan,Peth</h1>
-        <p>Address-Peth-Shirala Road(near Market Yard), Peth, Tal-Walwa, Dist. Sangli</p>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="facilities.html">Facilities</a>
-        <a href="contact.html">Contact</a>
-        <a href="admission.html">Admission</a>
-        <a href="routine.html">Routine</a>
-    </nav>
-
-    <div class="web">
-        <h2>Welcome</h2>
-        <p>We provide quality education and overall personality development.</p>
-    </div>
-<section class="hero-slider">
-    <h2>Our Inspiration</h2>
-
-    <div class="slider-container">
-
-        <button class="prev">&#10094;</button>
-
-        <div class="slides">
-            <div class="slide">
-                <img src="Inspirational_figure.jpeg">
-                <h3>Late Shri.Sambhajirao Bhagwanrao Patil.</h3>
-                <p>Inspirational Figure</p>
-            </div>
-
-            <div class="slide">
-                <img src="chairman.jpeg">
-                <h3>Shri.Jayant Sambhajirao Patil.</h3>
-                <p>Founder</p>
-            </div>
-        </div>
-
-        <button class="next">&#10095;</button>
-
-    </div>
-</section>
-    <footer>© 2026 School Website</footer>
 </body>
 
 </html>
+
 
 
 
